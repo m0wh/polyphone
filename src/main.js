@@ -52,3 +52,14 @@ function touchmove (e) {
   console.log(osc.volume.value)
   hzEl.textContent = Math.round(hz) + 'Hz'
 }
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('../sw.js', { scope: '/polyphone/' })
+      .then(r => {
+        console.log('service worker registered in scope: ', r.scope)
+      })
+      .catch(e => console.log('SW error: ', e))
+  })
+}
