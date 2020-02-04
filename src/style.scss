@@ -1,11 +1,49 @@
-
 body {
   margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
   font-family: Helvetica, sans-serif;
+  background-color: #22222b;
+  color: #f196a5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  > div {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
+  header {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+
+    > * {
+      margin: 0;
+      line-height: 1;
+      font-size: 14px;
+    }
+
+    .malo {
+      flex-grow: 2;
+    }
+
+    h1 {
+      flex-grow: 1;
+    }
+
+    .date {
+      flex-grow: 1;
+      text-align: right;
+    }
+  }
+
+  .hz {
+    margin: 0;
+    line-height: 1;
+    font-size: 20vw;
+    font-weight: 900;
+    font-variant-numeric: tabular-nums;
   }
 }

@@ -1,0 +1,20 @@
+{
+  "short_name": "POLYPHONE",
+  "name": "POLYPHONE",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "./src/assets/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./src/assets/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],  
+  "background_color": "#22222b",
+  "display": "fullscreen",
+  "theme_color": "#f196a5"
+}
