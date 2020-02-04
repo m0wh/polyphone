@@ -1,7 +1,7 @@
 {
   "short_name": "POLYPHONE",
   "name": "POLYPHONE",
-  "start_url": "/",
+  "start_url": "/polyphone/",
   "icons": [
     {
       "src": "./src/assets/icon-192.png",
