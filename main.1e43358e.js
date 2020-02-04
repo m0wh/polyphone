@@ -210,7 +210,7 @@ function touchmove(e) {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
-    navigator.serviceWorker.register("/src/sw.js", {
+    navigator.serviceWorker.register("/sw.js", {
       scope: '/polyphone/'
     }).then(function (r) {
       console.log('service worker registered in scope: ', r.scope);
@@ -219,7 +219,7 @@ if ('serviceWorker' in navigator) {
     });
   });
 }
-},{"tone":"node_modules/tone/build/Tone.js","./sw.js":[["src/sw.js","src/sw.js"],"src/sw.js.map","src/sw.js"]}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"tone":"node_modules/tone/build/Tone.js","./../sw.js":[["sw.js","sw.js"],"sw.js.map","sw.js"]}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -247,7 +247,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56251" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59799" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
